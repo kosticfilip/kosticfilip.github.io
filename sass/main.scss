@@ -1,0 +1,237 @@
+@import "./reboot";
+@import "./_font";
+@import "./_variables";
+@import "./layout";
+@import "./general";
+@import "./animations";
+
+// Logo and Nav
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px;
+
+  a {
+    margin-left: 30px;
+  }
+}
+
+.logo-full {
+  position: relative;
+  left: -45px;
+  span {
+    padding-left: 4px;
+    position: relative;
+    top: -1px;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
+.logo {
+  width: 26px;
+  .stroke {
+    fill: $dark-color;
+    transition: fill 0.3s ease;
+  }
+  .fill {
+    fill: transparent;
+    transition: fill 0.3s ease;
+    mix-blend-mode: multiply;
+  }
+}
+
+.logo-full:hover .logo .fill {
+  fill: rgba($dark-color, 0.3);
+}
+.logo-full:hover .logo .stroke {
+  fill: transparent;
+}
+
+// Intro
+
+.intro {
+  padding-top: 160px;
+  padding-bottom: 110px;
+
+  h1 {
+    //max-width: 85%;
+    font-weight: 500;
+  }
+}
+
+// Sections
+
+.light-grey {
+  background: $light;
+}
+
+.semi-grey {
+  background: #b8b8b8;
+}
+
+// Portfolio Grid
+
+.portfolio-grid {
+  padding-top: 50px;
+  display: grid;
+  grid-gap: 150px;
+  grid-row-gap: 0;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-portfolio {
+  position: relative;
+  img {
+    transform: scale3d(1, 1, 1);
+    width: 100%;
+    transition: transform 0.1s ease, box-shadow 0.15s ease;
+    box-shadow: 0 0 0 rgba($dark-color, 0);
+  }
+  h3 {
+    margin: 1.2rem 0 0.4rem 0;
+  }
+  p {
+    color: $semi-dark;
+    visibility: hidden;
+    transform: translate3d(0, 10px, 0);
+    opacity: 0;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+  }
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+  }
+}
+
+.card-portfolio.p-s {
+  margin-top: 100px;
+}
+
+.card-portfolio:hover {
+  img {
+    transform: scale3d(1.03, 1.03, 1);
+    box-shadow: 0 6px 26px rgba($dark-color, 0.09);
+  }
+  p {
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+// Projects
+
+.evolve-bg {
+  background-color: #bbf6ea;
+}
+.nissan-bg {
+  background-color: #bd5070;
+}
+.dash-bg {
+  background-color: #9aace8;
+}
+.fleet-bg {
+  background-color: #8bcec4;
+}
+.pakel-bg {
+  background-color: #7383e5;
+}
+
+.light {
+  h1,
+  p,
+  a,
+  h2 {
+    color: $bright !important;
+  }
+
+  .logo {
+    .stroke {
+      fill: $bright;
+    }
+  }
+}
+
+.project-intro {
+  padding-top: 30px;
+  h1,
+  h2 {
+    line-height: 1;
+  }
+  h1 {
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgba($dark-color, 0.55);
+    border-right: 1px solid white;
+    padding-right: 20px;
+    margin-top: 8px;
+  }
+}
+
+.project-info {
+  h5 {
+    margin-bottom: 0.2rem;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $semi-dark;
+  }
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.case-study {
+  h3 {
+    font-weight: 500;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.related-projects {
+  line-height: 1.1;
+
+  li {
+    list-style: none;
+    padding-bottom: 10px;
+  }
+  a {
+    color: $bright;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  a:hover {
+    //background-color: rgba($dark-color, 0.1);
+  }
+  .title {
+    font-size: 2.1rem;
+    margin: 0;
+  }
+}
+
+// Footer
+
+footer {
+  font-size: 0.9rem;
+  color: $text-color-semi;
+
+  a {
+    color: $text-color-semi;
+    margin-left: 30px;
+  }
+}
