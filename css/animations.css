@@ -1,0 +1,94 @@
+.fade-appear {
+  opacity: 0;
+  z-index: 1; }
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 500ms linear; }
+
+.fade-exit {
+  opacity: 0; }
+
+.appear1 {
+  animation: slideInFromBottom2 0.3s; }
+
+@keyframes slideInFromBottom2 {
+  0% {
+    transform: translateY(10px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+@keyframes scaleFade {
+  0% {
+    transform: scale3d(0, 0, 1);
+    opacity: 0; }
+  80% {
+    transform: scale3d(1.3, 1.3, 1);
+    opacity: 0.9; }
+  100% {
+    transform: scale3d(1, 1, 1);
+    opacity: 1; } }
+@keyframes scale {
+  0% {
+    transform: scale3d(0.2, 0.2, 1);
+    opacity: 0; }
+  100% {
+    transform: scale3d(1, 1, 1);
+    opacity: 1; } }
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(60px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-60px) scale(0.8);
+    opacity: 1; }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1; } }
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+  3.3% {
+    transform: scale(2); }
+  16.5% {
+    transform: scale(1.5); }
+  33% {
+    transform: scale(2); }
+  100% {
+    transform: scale(1); } }
+@keyframes flare-s {
+  0% {
+    transform: scale(1);
+    filter: blur(0); }
+  100% {
+    transform: scale(1.5);
+    filter: blur(20px);
+    opacity: 0;
+    visibility: hidden; } }
+@keyframes flare {
+  0% {
+    transform: scale(0.9);
+    filter: blur(0); }
+  50% {
+    transform: scale(2);
+    filter: blur(10px); }
+  100% {
+    transform: scale(0.9);
+    filter: blur(0); } }
+@keyframes bounce {
+  from {
+    transform: translateY(0px) scaleY(1); }
+  to {
+    transform: translateY(-15px) scaleY(0.96); } }
+@keyframes fade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*# sourceMappingURL=animations.css.map */
