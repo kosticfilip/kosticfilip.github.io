@@ -29,6 +29,14 @@
     font-size: 1rem;
   }
 }
+
+.nav.project {
+  border-bottom: 1px solid $dark-color;
+  height: 120px;
+  a {
+    margin: 0 auto;
+  }
+}
 .logo {
   width: 26px;
   .stroke {
@@ -42,22 +50,37 @@
   }
 }
 
-.logo-full:hover .logo .fill {
+.logo-full:hover .logo .fill,
+.logo:hover .fill {
   fill: rgba($dark-color, 0.3);
 }
-.logo-full:hover .logo .stroke {
-  fill: transparent;
+.logo-full:hover .logo .stroke,
+.logo:hover .stroke {
+  fill: transparent !important;
 }
 
 // Intro
 
 .intro {
-  padding-top: 160px;
-  padding-bottom: 110px;
+  padding-top: 12vh;
+  padding-bottom: 9vh;
 
   h1 {
     //max-width: 85%;
+    font-size: 3.7vw;
     font-weight: 500;
+  }
+}
+
+.about {
+  padding-top: 7vh;
+  padding-bottom: 9vh;
+  display: flex;
+  align-content: space-around;
+  align-items: flex-start;
+  img {
+    width: 100px;
+    margin-left: 200px;
   }
 }
 
@@ -68,7 +91,11 @@
 }
 
 .semi-grey {
-  background: #b8b8b8;
+  background: #b1b1b1;
+}
+
+.dark-bg {
+  background: #000;
 }
 
 // Portfolio Grid
@@ -83,14 +110,23 @@
 
 .card-portfolio {
   position: relative;
+  visibility: hidden;
+  opacity: 0;
+
+  .item-img {
+    overflow: hidden;
+    box-shadow: 0 0 0 rgba($dark-color, 0);
+    transition: box-shadow 0.15s ease;
+  }
   img {
     transform: scale3d(1, 1, 1);
     width: 100%;
-    transition: transform 0.1s ease, box-shadow 0.15s ease;
-    box-shadow: 0 0 0 rgba($dark-color, 0);
+    transition: transform 0.2s ease;
   }
   h3 {
     margin: 1.2rem 0 0.4rem 0;
+    font-weight: 700;
+    font-size: 1.54rem;
   }
   p {
     color: $semi-dark;
@@ -117,9 +153,11 @@
 }
 
 .card-portfolio:hover {
+  .item-img {
+    box-shadow: 0 8px 12px rgba($dark-color, 0.12);
+  }
   img {
-    transform: scale3d(1.03, 1.03, 1);
-    box-shadow: 0 6px 26px rgba($dark-color, 0.09);
+    transform: scale3d(1.05, 1.05, 1);
   }
   p {
     visibility: visible;
@@ -128,10 +166,15 @@
   }
 }
 
+// About
+
+.profile-bg {
+  background-color: #d4e6e6;
+}
 // Projects
 
 .evolve-bg {
-  background-color: #bbf6ea;
+  background-color: #dff3ed;
 }
 .nissan-bg {
   background-color: #bd5070;
@@ -159,6 +202,12 @@
       fill: $bright;
     }
   }
+  .nav.project {
+    border-color: $bright;
+  }
+  .project-intro span {
+    color: rgba($bright, 0.5);
+  }
 }
 
 .project-intro {
@@ -169,14 +218,28 @@
   }
   h1 {
     margin-bottom: 0;
+    font-size: 3rem;
+    text-align: left;
+  }
+  span {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: rgba($dark-color, 0.5);
+    font-size: 0.8rem;
+    text-align: right;
+    display: block;
   }
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 300;
-    color: rgba($dark-color, 0.55);
-    border-right: 1px solid white;
-    padding-right: 20px;
+    text-align: right;
+    font-style: italic;
+    color: $dark-color;
     margin-top: 8px;
+  }
+  img {
+    margin-top: 50px;
   }
 }
 
@@ -205,21 +268,27 @@
 .related-projects {
   line-height: 1.1;
 
-  li {
-    list-style: none;
-    padding-bottom: 10px;
-  }
   a {
     color: $bright;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+
+    span {
+      width: 100%;
+    }
   }
   a:hover {
-    //background-color: rgba($dark-color, 0.1);
+    opacity: 0.8;
+  }
+  .name {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    color: rgba($bright, 0.5);
   }
   .title {
-    font-size: 2.1rem;
+    font-size: 4rem;
     margin: 0;
   }
 }
@@ -227,11 +296,180 @@
 // Footer
 
 footer {
-  font-size: 0.9rem;
-  color: $text-color-semi;
+  background: #000;
+  padding: 80px 0 80px 0;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
 
   a {
-    color: $text-color-semi;
-    margin-left: 30px;
+    color: $bright;
+  }
+  a:hover {
+    color: rgba($bright, 0.6);
+  }
+}
+
+// R E S P O N S I V N E S S -----------------------------
+
+@media all and (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  footer {
+    a {
+      padding: 8px 14% 8px 0;
+      text-align: right;
+    }
+  }
+
+  .f-space {
+    flex-direction: column;
+  }
+
+  .f-split {
+    flex-direction: column;
+
+    h3 {
+      margin-bottom: 1rem;
+      margin-top: 1.9rem;
+    }
+  }
+
+  .t-i {
+    width: 100%;
+  }
+  .s-l {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .s-xl {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .display2 {
+    font-size: 1.5rem;
+  }
+
+  .nav {
+    height: 80px;
+    margin: 0;
+    a {
+      margin-left: 0;
+    }
+
+    nav a {
+      margin-left: 20px;
+    }
+  }
+  .nav.project {
+    height: 80px;
+  }
+  .logo-full {
+    left: 0;
+
+    span {
+      display: none;
+    }
+  }
+
+  .intro {
+    padding-top: 8vh;
+    padding-bottom: 4vh;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .about {
+    img {
+      margin-left: 0;
+    }
+  }
+
+  .portfolio-grid {
+    grid-gap: 30px;
+  }
+
+  .portfolio-grid.container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .card-portfolio.p-s {
+    margin-top: 40px;
+  }
+
+  .card-portfolio {
+    h3 {
+      font-size: 1rem;
+      margin: 1rem 0 0.2rem 1rem;
+    }
+    p {
+      visibility: visible;
+      opacity: 1;
+      line-height: 1.1;
+      transform: translate3d(0, 0, 0);
+      font-size: 0.8rem;
+      margin: 0 0 0.4rem 1rem;
+    }
+  }
+
+  .case-study {
+    .container img,
+    .container video {
+      margin-left: -16px;
+      margin-right: -16px;
+      max-width: calc(100% + 32px);
+      width: calc(100% + 32px);
+    }
+    .col-8,
+    .col-4 {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+
+    .project-intro {
+      padding-top: 26px;
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        text-align: left;
+        margin-top: 0;
+        font-size: 1.1rem;
+      }
+      span {
+        margin-top: 0.5rem;
+        font-size: 0.5rem;
+        text-align: left;
+      }
+    }
+
+    .project-info {
+      padding-bottom: 10px;
+      padding-left: 10px;
+      p {
+        margin-bottom: 0.6rem;
+      }
+      h5 {
+        font-size: 0.6rem;
+        margin-bottom: 0.16rem;
+      }
+    }
+  }
+
+  .related-projects {
+    .name {
+      font-size: 0.8rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
   }
 }

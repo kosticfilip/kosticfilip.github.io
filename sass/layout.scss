@@ -310,19 +310,19 @@
   justify-content: space-between;
 }
 
-.f-left-center {
+.f-split {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.justify-content-end {
-  justify-content: flex-end !important;
-}
-.align-self-center {
-  align-self: center !important;
-}
-.justify-content-center {
-  justify-content: center !important;
+  align-content: space-between;
+
+  .f-item {
+    flex: 1;
+  }
+  .f-item:first-child {
+    flex-grow: 1;
+  }
+  .f-item:last-child {
+    flex-grow: 2;
+  }
 }
 .no-space {
   padding: 0;

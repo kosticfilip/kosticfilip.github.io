@@ -24,3 +24,21 @@ function anchorLinkHandler(e) {
 const linksToAnchors = document.querySelectorAll('a[href^="#"]');
 
 linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
+
+var animate = new Animate({
+  target: "[data-animate]",
+  animatedClass: "js-animated",
+  offset: [0.2, 0.5],
+  delay: 0,
+  remove: true,
+  scrolled: false,
+  reverse: false,
+  onLoad: true,
+  onScroll: true,
+  onResize: false,
+  disableFilter: false,
+  callbackOnInit: function() {},
+  callbackOnInView: function(el) {},
+  callbackOnAnimate: function(el) {}
+});
+animate.init();

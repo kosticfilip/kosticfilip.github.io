@@ -15,68 +15,67 @@
 
   <body>
     <main class="case-study">
+      <!-- Project Cover and Intro -->
       <div class="project-bg evolve-bg">
         <header class="container">
-          <div class="nav row">
-            <a href="index.html">
-              <span class="logo-full">
-                <svg
-                  version="1.1"
-                  class="logo"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px"
-                  y="0px"
-                  viewBox="0 0 230 230"
-                  style="enable-background:new 0 0 230 230;"
-                  xml:space="preserve"
-                >
-                  <g class="fill">
-                    <g>
-                      <rect x="0" y="0" width="77" height="230" />
-                    </g>
-                    <g>
-                      <rect x="0" y="0" width="153" height="153.3" />
-                    </g>
-                    <g>
-                      <rect x="0" y="0" width="230" height="76.7" />
-                    </g>
+          <div class="nav project">
+            <a href="/">
+              <svg
+                version="1.1"
+                class="logo"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 230 230"
+                style="enable-background:new 0 0 230 230;"
+                xml:space="preserve"
+              >
+                <g class="fill">
+                  <g>
+                    <rect x="0" y="0" width="77" height="230" />
                   </g>
-                  <g class="stroke">
-                    <g>
-                      <path
-                        d="M68,154v67H9v-67H68 M77,145H0v85h77V145L77,145z"
-                      />
-                    </g>
-                    <g>
-                      <path
-                        d="M144,9v135.3H9V9H144 M153,0H0v153.3h153V0L153,0z"
-                      />
-                    </g>
-                    <g>
-                      <path
-                        d="M221,9v58.7H9V9H221 M230,0H0v76.7h230V0L230,0z"
-                      />
-                    </g>
+                  <g>
+                    <rect x="0" y="0" width="153" height="153.3" />
                   </g>
-                </svg>
-                <span>Kostić Filip</span>
-              </span>
+                  <g>
+                    <rect x="0" y="0" width="230" height="76.7" />
+                  </g>
+                </g>
+                <g class="stroke">
+                  <g>
+                    <path d="M68,154v67H9v-67H68 M77,145H0v85h77V145L77,145z" />
+                  </g>
+                  <g>
+                    <path
+                      d="M144,9v135.3H9V9H144 M153,0H0v153.3h153V0L153,0z"
+                    />
+                  </g>
+                  <g>
+                    <path d="M221,9v58.7H9V9H221 M230,0H0v76.7h230V0L230,0z" />
+                  </g>
+                </g>
+              </svg>
             </a>
-
-            <nav>
-              <a href="#projects" class="styled">Projects.</a>
-              <a href="" class="styled">Playground.</a>
-              <a href="" class="styled">About.</a>
-            </nav>
           </div>
         </header>
         <section class="container project-intro s-m text-center">
-          <h1>evolve</h1>
-          <h2 class="text-thin">colloboration platform</h2>
+          <div class="row">
+            <div class="col-8">
+              <h1>Web app for feedback & collaboration</h1>
+            </div>
+
+            <div class="col-4">
+              <span>project 01.</span>
+              <h2 class="text-thin">
+                evolve-app
+              </h2>
+            </div>
+          </div>
           <img src="img/cover.jpg" />
         </section>
       </div>
+      <!-- EOF Project Cover and Intro -->
 
       <section class="container mt-4">
         <div class="project-info f-space">
@@ -95,7 +94,11 @@
           >
           <span
             ><h5>Link</h5>
-            <p><a class="styled line" href="">www.evolve-app.io</a></p></span
+            <p>
+              <a class="styled line" href="https://evolve-app.co"
+                >www.evolve-app.co</a
+              >
+            </p></span
           >
         </div>
       </section>
@@ -104,26 +107,110 @@
         <div class="t-i m-auto">
           <h3 class="text-center">Basic Info</h3>
           <p>
-            The iOS application was submitted to the App Store in 2016.
-            VivifyScrum iOS app has all the essential features that keep its
-            users up to date with their projects.<br /><br />The process of
-            developing this app started with creating the initial UI and UX
-            which were based on the best practices in mobile app design.
+            The web platform is currently in beta. I started doing this as a
+            side project, working full-stack. My idea was to make something
+            affordable for freelancers and teams who need to gather feedback and
+            keep their's projects organized.
+          </p>
+          <p>
+            It supports image & pdf annotations and notes, tracking and managing
+            all revisions till final approval, <i>Tree View</i> - simple
+            overview and presentation of whole project.
           </p>
         </div>
       </section>
 
-      <section class="container-s mt-5">
-        <img class="border mb-5" src="img/screens.jpg" />
-        <img class="mt-5" src="img/screen2.jpg" />
+      <section class="container mt-5">
+        <video
+          width="100%"
+          height="auto"
+          style="box-shadow: 0 7px 40px rgba(0,0,0,.08); border-radius: 12px;"
+          autoplay
+          loop
+          muted
+        >
+          <source src="img/video-full.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </section>
 
-      <section class="container-s mt-5">
-        <img class="border mb-5" src="img/tree-view.jpg" />
+      <section class="container s-l mt-4" style="padding-bottom: 0">
+        <div class="t-i m-auto">
+          <h3 class="text-center">Features</h3>
+          <p>
+            Platform was built using <i>MERN</i> stack and it is hosted on AWS
+            cloud. It supports Drag & Drop file uploads, auto creation of
+            revisions for the files with same names, grouping and reordering
+            files, project invites by email. Most of the funcionality is
+            available on mobile phones too.
+          </p>
+          <p>
+            I've tried to minimize the usage of react plugins, and make most of
+            components myself - <i>annotations & notes</i>,
+            <i>file uploading widget</i>, <i>revisions stack carousel</i>,
+            <i>common elements</i> (input, drop-down, modal, loading
+            animations).
+          </p>
+        </div>
       </section>
 
-      <footer></footer>
+      <img src="img/2screens.jpg" />
+      <img src="img/wide.jpg" />
+      <section class="container mt-5 mb-5">
+        <img class="mt-5" src="img/Mobile-2screens-grey.jpg" />
+        <img class="mt-5 mb-5" src="img/tablet-history.jpg" />
+      </section>
+
+      <section class="container s-l mt-4">
+        <div class="t-i m-auto">
+          <h3 class="text-center">Conclusion</h3>
+          <p>
+            Experience doing something like this was overall great. Making
+            database models, express server, file uploading service for aws,
+            emails, error handling, auth... and connecting all of that with
+            react app was really a lot of work, often with frustrating moments
+            at the beginning, but in the end, it is very satisfying to see it
+            all working together.
+          </p>
+          <p>
+            There are a lot of things which need more work, and some features I
+            would like to implement, but overall I'm very pleased with the
+            results. Most importantly, I feel like I learned a lot, and improved
+            my coding skills but huge amount over the past six months making
+            this.
+          </p>
+          <p>
+            From the UI & UX perspective, I'm really amazed with potential of
+            react app, coupled with great performance, nice animation
+            implementation, smooth transitions and loading states - The final
+            result feels almost like a native app. 👍
+          </p>
+        </div>
+      </section>
+
+      <!-- Related Projects-->
+      <div class="dark-bg mt-5 p-rel">
+        <section class="container s-xl related-projects">
+          <a class="row text-center" href="/projects/dash-nexus/">
+            <span class="name">
+              Next Project
+            </span>
+            <span class="title">
+              Dash Nexus
+            </span>
+          </a>
+        </section>
+      </div>
+      <!-- EOF Related Projects-->
     </main>
+    <footer>
+      <section class="container f-space">
+        <a href="/about/">About me</a>
+        <a href="mailto:hi@kosticfilip.com">hi@kosticfilip.com</a>
+        <a href="http://www.linkedin.com/in/filipkostic">LinkedIn</a>
+        <a class="" href="">Download CV</a>
+      </section>
+    </footer>
   </body>
   <script src="js/main.js"></script>
 </html>

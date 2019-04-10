@@ -7,8 +7,16 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="theme-color" content="#000000" />
-    <meta name="yandex-verification" content="73661e2f1ad74ba4" />
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta
+      name="description"
+      content="Kostic Filip - Portfolio. Web design, development, apps"
+    />
+    <meta
+      name="keywords"
+      content="Kostic, Filip, Developer, Design, Web, Websites, App, React, Redux, Javascript"
+    />
+    <meta name="author" content="Kostic Filip" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 
     <title>Kostic Filip - Portfolio</title>
@@ -17,7 +25,12 @@
   <body>
     <header class="container">
       <div class="nav row">
-        <a href="index.html">
+        <a
+          href="index.html"
+          class="hidden"
+          data-animate
+          data-animation-classes="animated slideInFade"
+        >
           <span class="logo-full">
             <svg
               version="1.1"
@@ -58,89 +71,148 @@
           </span>
         </a>
 
-        <nav>
+        <nav
+          class="hidden"
+          data-animate
+          data-animation-classes="animated slideInFade"
+          data-animation-delay="200"
+        >
           <a href="#projects" class="styled">Projects.</a>
-          <a href="" class="styled">Playground.</a>
-          <a href="" class="styled">About.</a>
+          <a href="/about" class="styled">Profile.</a>
         </nav>
       </div>
     </header>
 
     <main>
       <section class="container intro">
-        <h1>
-          developer / designer. I enjoy working with diverse companies and
-          brands
+        <h1
+          class="hidden"
+          data-animate
+          data-animation-classes="animated slideInFade"
+          data-animation-delay="150"
+        >
+          developer / designer. I enjoy working on diverse digital products &
+          websites
         </h1>
       </section>
 
       <section class="container portfolio-grid mb-5" id="projects">
-        <figure class="card-portfolio">
-          <img src="img/evolve.jpg" />
+        <figure
+          data-animate
+          data-animation-classes="animated slideInBottom"
+          class="card-portfolio"
+        >
+          <div
+            data-animate
+            data-animation-classes="animated scaleIn"
+            class="item-img"
+          >
+            <img
+              data-animate
+              data-animation-classes="animated scaleIn2"
+              src="img/evolve.jpg"
+            />
+          </div>
           <h3>Evolve</h3>
           <p>Owner, UI & UX, Development</p>
           <a href="/projects/evolve">View Project</a>
         </figure>
 
-        <figure class="card-portfolio p-s">
-          <img src="img/dash.jpg" />
+        <figure
+          data-animate
+          data-animation-classes="animated slideInBottom"
+          class="card-portfolio p-s"
+        >
+          <div
+            data-animate
+            data-animation-classes="animated scaleIn"
+            class="item-img"
+          >
+            <img
+              data-animate
+              data-animation-classes="animated scaleIn2"
+              src="img/dash.jpg"
+            />
+          </div>
           <h3>Dash Nexus</h3>
           <p>UI & UX design</p>
           <a href="/projects/dash-nexus/">View Project</a>
         </figure>
 
-        <figure class="card-portfolio p-s">
-          <img src="img/tryfleet2.jpg" />
+        <figure
+          data-animate
+          data-animation-classes="animated slideInBottom"
+          class="card-portfolio p-s"
+        >
+          <div
+            data-animate
+            data-animation-classes="animated scaleIn"
+            class="item-img"
+          >
+            <img
+              data-animate
+              data-animation-classes="animated scaleIn2"
+              src="img/tryfleet2.jpg"
+            />
+          </div>
           <h3>TryFleet</h3>
           <p>UI & UX, Development</p>
-          <a href="/projects/tryfleet/">View Project</a>
+          <a href="/projects/try-fleet/">View Project</a>
         </figure>
 
-        <figure class="card-portfolio">
-          <img src="img/pakel.jpg" />
+        <figure
+          data-animate
+          data-animation-classes="animated slideInBottom"
+          class="card-portfolio"
+        >
+          <div
+            data-animate
+            data-animation-classes="animated scaleIn"
+            class="item-img"
+          >
+            <img
+              data-animate
+              data-animation-classes="animated scaleIn2"
+              src="img/pakel.jpg"
+            />
+          </div>
           <h3>E-Commerce</h3>
           <p>UI & UX, Development</p>
-          <a href="">View Project</a>
+          <a href="/projects/pakel">View Project</a>
         </figure>
 
-        <figure class="card-portfolio">
-          <img src="img/nissan.jpg" />
+        <figure
+          data-animate
+          data-animation-classes="animated slideInBottom"
+          class="card-portfolio"
+        >
+          <div
+            data-animate
+            data-animation-classes="animated scaleIn"
+            class="item-img"
+          >
+            <img
+              data-animate
+              data-animation-classes="animated scaleIn2"
+              src="img/nissan.jpg"
+            />
+          </div>
           <h3>Nissan Ireland</h3>
           <p>UI & UX</p>
-          <a href="">View Project</a>
+          <a href="/projects/nissan/">View Project</a>
         </figure>
       </section>
 
-      <section class="container light-grey s-xl">
-        <div class="row">
-          <h2 class="col-4">About Me</h2>
-          <div class="col-8">
-            <p>
-              I am a web developer with extensive expirence in ui & ux design,
-              currently I'm focused on frontend devolopment - javascript, react.
-            </p>
-            <a href="" class="styled line">Learn More</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="container s-xl">
-        <div class="row">
-          <div class="col-6">
-            <img src="/img/evolve.jpg" />
-          </div>
-          <div class="col-6 fcc">
-            <h3>Randomness</h3>
-            <p>
-              Collections of various stuff I enjoy creating.
-            </p>
-            <a href="" class="styled line">Learn More</a>
-          </div>
-        </div>
-      </section>
-
-      <footer></footer>
+      <footer>
+        <section class="container f-space">
+          <a href="/about/">About me</a>
+          <a href="mailto:hi@kosticfilip.com">hi@kosticfilip.com</a>
+          <a href="http://www.linkedin.com/in/filipkostic">LinkedIn</a>
+          <a class="" href="">Download CV</a>
+        </section>
+      </footer>
     </main>
   </body>
+  <script src="js/animate.min.js"></script>
   <script src="js/main.js"></script>
 </html>
