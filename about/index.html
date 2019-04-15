@@ -17,51 +17,37 @@
   <body class="profile-page">
     <div class="profile-bg">
       <header class="container">
-        <div class="nav row">
-          <a href="/">
+        <div class="nav">
+          <a
+            href="/"
+            class="hidden"
+            data-animate
+            data-animation-classes="animated slideInFade"
+          >
             <span class="logo-full">
-              <svg
-                version="1.1"
-                class="logo"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 230 230"
-                style="enable-background:new 0 0 230 230;"
-                xml:space="preserve"
-              >
-                <g class="fill">
-                  <g>
-                    <rect x="0" y="0" width="77" height="230" />
-                  </g>
-                  <g>
-                    <rect x="0" y="0" width="153" height="153.3" />
-                  </g>
-                  <g>
-                    <rect x="0" y="0" width="230" height="76.7" />
-                  </g>
-                </g>
-                <g class="stroke">
-                  <g>
-                    <path d="M68,154v67H9v-67H68 M77,145H0v85h77V145L77,145z" />
-                  </g>
-                  <g>
-                    <path
-                      d="M144,9v135.3H9V9H144 M153,0H0v153.3h153V0L153,0z"
-                    />
-                  </g>
-                  <g>
-                    <path d="M221,9v58.7H9V9H221 M230,0H0v76.7h230V0L230,0z" />
-                  </g>
-                </g>
-              </svg>
+              <div class="logo-line">
+                <div>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div>
+                  <span></span>
+                </div>
+                <div>
+                  <span></span>
+                </div>
+              </div>
 
-              <span>Kostić Filip</span>
+              <span>Filip Kostić</span>
             </span>
           </a>
 
-          <nav>
+          <nav
+            class="hidden"
+            data-animate
+            data-animation-classes="animated slideInFade"
+            data-animation-delay="200"
+          >
             <a href="/#projects" class="styled">Projects.</a>
             <a
               href="/about"
@@ -75,19 +61,42 @@
 
       <section class="container about">
         <div>
-          <h1 class="display2 fadeIn">
+          <h1
+            class="display2 hidden"
+            data-animate
+            data-animation-classes="animated slideInFade"
+            data-animation-delay="150"
+          >
             I've always been drawn to the overlap between design and
             development.
           </h1>
-          <h1 class="display2 mt-3 fadeIn">
+          <h1
+            class="display2 mt-3 hidden"
+            data-animate
+            data-animation-classes="animated slideInFade"
+            data-animation-delay="180"
+          >
             I enjoy each aspect, and love building sites & apps from start to
             finish, I'm currently focused on front-end.
           </h1>
-          <a class="btn mt-3" target="_blank" href="/Filip-Resume.pdf"
+          <a
+            class="btn mt-3 hidden"
+            data-animate
+            data-animation-classes="animated slideInFade"
+            data-animation-delay="210"
+            target="_blank"
+            href="/Filip-Resume.pdf"
             >Download CV</a
           >
         </div>
-        <img src="/img/avatar.png" />
+        <img
+          class="hidden"
+          data-animate
+          data-animation-classes="animated slideInFade"
+          data-animation-delay="240"
+          style="border-radius: 50%"
+          src="/img/avatar.jpg"
+        />
       </section>
     </div>
 
@@ -97,10 +106,10 @@
           <h3 class="f-item">About</h3>
           <div class="f-item">
             <p>
-              Throughout my experience as a designer, I've had the pleasure of
-              working with some talented and passionate people on very
-              interesting projects. Later I became more focused on front-end
-              development.
+              I’m a 7 years experienced designer & developer, currently
+              specializing in front-end (JavaScript, React, Redux). I am looking
+              for the position of a web developer in a company which will
+              utilize my unique skill set.
             </p>
           </div>
         </div>
@@ -109,8 +118,8 @@
           <h3 class="f-item">Skills</h3>
           <div class="f-item row">
             <div class="col-6">
-              <h4>Focused On</h4>
-              <p>CSS, Javascript</p>
+              <h4>Primary</h4>
+              <p>CSS, JavaScript</p>
               <p>React, Redux</p>
               <p style="opacity: .6">NodeJS</p>
               <p style="opacity: .6">MongoDB</p>
@@ -118,13 +127,13 @@
 
             <div class="col-6">
               <h4>Have Experience</h4>
-              <p style="font-size: 1rem;">
+              <p>
                 PHP, MySQL, WordPress (Custom themes, WooCommerce), AWS, Zen
                 Cart
               </p>
-              <h4>Design</h4>
+              <h4 class="mt-4">UI & UX Design</h4>
               <p>
-                UI and UX design - Sketch, Photoshop
+                Sketch, Photoshop
               </p>
             </div>
           </div>
@@ -133,26 +142,40 @@
         <div class="f-split s-l">
           <h3 class="f-item">Experience</h3>
           <div class="f-item">
-            <h4>Developer & Designer - Freelance 2017-Present</h4>
+            <h4>Developer & Designer - Freelance<br />2017-Present</h4>
             <ul>
               <li>
-                Full-stack development
+                Developed evolve-app.co, platform for feedback and
+                collaboration, working as a full-stack dev (React, Redux,
+                NodeJS, MongoDB, AWS)
               </li>
-              <li>React, Redux, NodeJS, NoSQL</li>
+              <li>
+                Worked as front-end developer, focused on implementing
+                pixel-perfect design for react components, while adding smooth
+                animations and UI transitions
+              </li>
             </ul>
-            <h4>Visual Designer - Eton Digital 2013-2017</h4>
+            <h4>
+              Visual Designer - Eton Digital<br />
+              2014-2017
+            </h4>
             <ul>
               <li>
-                UI and UX design
+                Designed websites, web apps and social media platforms.<br />Clients
+                included: Nissan, The Marque, Ricoh, Sociable Data
               </li>
-              <li>Branding</li>
+              <li>Worked on branding</li>
             </ul>
-            <h4>Web Designer & Developer - 2010-2013</h4>
+            <h4>Web Designer & Developer<br />2011-2014</h4>
             <ul>
               <li>
-                Worked on simple CMS websites, front-end (css, html, jquery)
+                Worked on websites with CMS (WordPress, Zen Cart), front-end
+                (CSS, HTML, jQuery).
               </li>
-              <li>Web design, Branding</li>
+              <li>
+                Worked closely with clients on small branding projects both
+                print and digital.
+              </li>
             </ul>
           </div>
         </div>
