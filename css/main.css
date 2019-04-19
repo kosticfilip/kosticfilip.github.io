@@ -1151,7 +1151,7 @@ footer {
 
   .logo-full {
     left: 0; }
-    .logo-full span {
+    .logo-full > span {
       display: none; }
 
   .intro {
