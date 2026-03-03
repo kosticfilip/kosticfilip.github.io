@@ -1,0 +1,46 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding-top: 3rem;
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.content {
+  margin-bottom: 2rem;
+}
+
+.heading {
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  /* color: var(--brandColor); */
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: center bottom;
+  background-size: cover;
+  background-color: var(--background);
+  background-blend-mode: multiply;
+
+  &.location {
+    background-image: url("/images/map.png");
+  }
+
+  &.tools {
+    background-image: url("/images/web-tools.png");
+    background-position: center top;
+  }
+}

@@ -1,0 +1,123 @@
+:where(.root) {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+/* Remove top margin if first in container */
+.root:first-child {
+  margin-top: 0;
+}
+
+/* ------------------ */
+/* Headings */
+/* ------------------ */
+
+:where(.h1) {
+  font-size: 2.5rem;
+  line-height: 1.05;
+  font-weight: 700;
+  margin: 1.6em 0 0.6em;
+}
+
+:where(.h2) {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 1.4em 0 0.6em;
+}
+
+.h3 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  font-weight: 600;
+  margin: 1.2em 0 0.5em;
+}
+
+.h4 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 600;
+  margin: 1.1em 0 0.5em;
+}
+
+.h5 {
+  font-size: 1.25rem;
+  line-height: 1.35;
+  font-weight: 600;
+  margin: 1em 0 0.4em;
+}
+
+.h6 {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 0.9em 0 0.4em;
+}
+
+/* ------------------ */
+/* Body */
+/* ------------------ */
+
+:where(.body1) {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 0 0 1em;
+}
+
+:where(.body2) {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 0 0 1em;
+}
+
+/* ------------------ */
+/* Supporting text */
+/* ------------------ */
+
+.subtitle1 {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 0.8em 0 0.4em;
+}
+
+.subtitle2 {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 0.7em 0 0.4em;
+}
+
+.caption {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  margin: 0 0 0.8em;
+}
+
+.overline {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.6em;
+}
+
+/* Utilities */
+
+.noWrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.secondary {
+  color: color-mix(in srgb, var(--foreground) 70%, white);
+}
+
+.primary {
+  color: var(--foreground);
+}

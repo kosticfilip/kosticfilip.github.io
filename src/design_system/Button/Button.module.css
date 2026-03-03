@@ -1,0 +1,93 @@
+.base {
+  --radius: 999px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  font-weight: 600;
+  border-radius: var(--radius);
+
+  cursor: pointer;
+  border: 1px solid transparent;
+
+  transition:
+    transform 120ms ease,
+    box-shadow 160ms ease,
+    background 200ms ease,
+    color 200ms ease;
+
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* ===================== */
+/* Sizes */
+/* ===================== */
+
+.sm {
+  height: 36px;
+  padding: 0 1rem;
+  font-size: 0.875rem;
+}
+
+.md {
+  height: 44px;
+  padding: 0 1.25rem;
+  font-size: 1rem;
+  min-width: 200px;
+}
+
+.lg {
+  height: 52px;
+  padding: 0 1.75rem;
+  font-size: 1.125rem;
+  min-width: 240px;
+}
+
+/* ===================== */
+/* Variants */
+/* ===================== */
+
+.default {
+  color: white;
+  background: var(--brandColor);
+}
+
+.default:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(79, 70, 229, 0.35);
+}
+
+.default:active {
+  transform: translateY(0);
+}
+
+.secondary {
+  background: transparent;
+  border: 2px solid var(--foreground);
+}
+
+.secondary:hover {
+  color: var(--brandColor);
+  border-color: var(--brandColor);
+}
+
+/* ===================== */
+/* Focus */
+/* ===================== */
+
+.base:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.35);
+}
+
+/* Disabled */
+
+.base:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}

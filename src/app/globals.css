@@ -1,19 +1,17 @@
 :root {
-  --background: #ffffff;
+  --background: #efefe7;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --navHeight: 80px;
+  --baseFontSize: 18px;
+  --brandColor: #2f95a6;
+  --borderColor: rgba(0, 0, 0, 0.1);
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-size: var(--baseFontSize);
 }
 
 body {
@@ -31,12 +29,6 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--brandColor);
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
