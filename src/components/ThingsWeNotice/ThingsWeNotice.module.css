@@ -6,10 +6,6 @@
   margin-bottom: 1rem;
 }
 
-.subtitle {
-  color: #6b6b6b;
-}
-
 .grid {
   display: grid;
   gap: 0.5rem;
@@ -51,7 +47,7 @@
   padding: 0.5rem;
   border-radius: 50%;
   /* background-color: color-mix(in srgb, var(--brandColor) 15%, transparent); */
-  background-color: blanchedalmond;
+  background-color: var(--complementaryColor);
   /* box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1); */
   align-self: flex-start;
   display: inline-flex;

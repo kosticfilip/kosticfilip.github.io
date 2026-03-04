@@ -12,23 +12,6 @@
     box-shadow 180ms ease;
 }
 
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow:
-    0 18px 60px rgba(0, 0, 0, 0.06),
-    inset 0 1px 0 rgba(255, 255, 255, 0.6);
-}
-
-.default {
-  /* background: linear-gradient(
-    135deg,
-    #e9eef3 0%,
-    #dbe4ea 35%,
-    #d0dbe2 65%,
-    #e6edf2 100%
-  ); */
-}
-
 .solid {
   background: #f4f6f8;
 }

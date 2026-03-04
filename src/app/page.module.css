@@ -43,8 +43,34 @@
   }
 }
 
+.mailto {
+  color: var(--brandColor);
+}
+
 .workIllustration {
   width: 100%;
   height: auto;
   transform: scale(1.2);
+}
+
+.contactOption {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.bookCall {
+  color: var(--foreground);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .divider {
+    display: none;
+  }
 }
