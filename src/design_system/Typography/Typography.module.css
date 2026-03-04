@@ -63,14 +63,20 @@
   font-size: 1rem;
   line-height: 1.4;
   font-weight: 400;
-  margin: 0 0 1em;
+
+  &p {
+    margin: 0 0 1em;
+  }
 }
 
 :where(.body2) {
   font-size: 0.875rem;
   line-height: 1.4;
   font-weight: 400;
-  margin: 0 0 1em;
+
+  &p {
+    margin: 0 0 1em;
+  }
 }
 
 /* ------------------ */

@@ -1,0 +1,64 @@
+.base {
+  margin: 0;
+  border: 0;
+  position: relative;
+  color: inherit;
+}
+
+/* ---------- Orientation ---------- */
+
+.horizontal {
+  border-top: 1px solid var(--borderColor);
+  width: 100%;
+}
+
+.vertical {
+  border-left: 1px solid var(--borderColor);
+  height: 100%;
+}
+
+/* ---------- Variants ---------- */
+
+.fullWidth {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.inset {
+  margin-left: 72px;
+}
+
+.middle {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/* ---------- With children ---------- */
+
+.withChildren {
+  border: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.withChildren::before,
+.withChildren::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid var(--borderColor);
+}
+
+.withChildren::before {
+  margin-right: 16px;
+}
+
+.withChildren::after {
+  margin-left: 16px;
+}
+
+.label {
+  white-space: nowrap;
+  font-size: 0.875rem;
+  opacity: 0.7;
+}

@@ -1,15 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./page.module.css";
 import { ThingsWeNotice } from "@/components/ThingsWeNotice";
 import { HowWeWork } from "@/components/HowWeWork";
 import LocationTeam from "@/components/LocationTeam";
+import styles from "./page.module.css";
 
 import { Container } from "@/design_system/Container";
 import { Typography } from "@/design_system/Typography";
 import { Card } from "@/design_system/Card";
 import Spacer from "@/design_system/Spacer";
 import { Button } from "@/design_system/Button";
+import { Divider } from "@/design_system/Divider";
 
 export default function Home() {
   return (
@@ -109,17 +110,38 @@ export default function Home() {
               Contact Us
             </Typography>
             <Typography scale={1.4}>
-              Need a dev partner? Let’s talk — schedule a call with Filip, our
-              lead
+              Need a dev partner?
+              <br />
+              Let’s talk — drop us an email or schedule a call with Filip, our
+              lead.
             </Typography>
 
-            <Typography as="a" scale={1.4} href="mailto:hi@frameclear.dev">
-              hi@frameclear.dev
-            </Typography>
+            <div className={styles.contactOption}>
+              <div>
+                <Typography
+                  as="a"
+                  scale={1.4}
+                  className={styles.mailto}
+                  href="mailto:hi@frameclear.dev"
+                >
+                  hi@frameclear.dev
+                </Typography>
 
-            <Typography as="p">
-              Available for hire! — <i>18.02.2026</i>
-            </Typography>
+                <Typography as="p" variant="body2">
+                  Available for hire! — 18.02.2026
+                </Typography>
+              </div>
+
+              <Divider
+                orientation="vertical"
+                height={40}
+                className={styles.divider}
+              />
+
+              <Button as="a" variant="secondary" className={styles.bookCall}>
+                Book a call
+              </Button>
+            </div>
           </div>
           <Image
             src="/images/contact-illustration.svg"

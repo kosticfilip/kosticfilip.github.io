@@ -54,7 +54,7 @@ export function ThingsWeNotice() {
           Things we notice
         </Typography>
 
-        <Typography as="p" scale={1.3} className={styles.subtitle}>
+        <Typography as="p" color="secondary" scale={1.3}>
           Play by the book. Exceed the limits.
         </Typography>
       </div>
